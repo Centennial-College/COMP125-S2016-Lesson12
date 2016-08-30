@@ -19,7 +19,7 @@
     function init() {
 
         canvas = document.getElementById('canvas');
-        stage = createjs.Stage(canvas);
+        stage = new createjs.Stage(canvas);
         createjs.Ticker.framerate = 60; // 60 frames per second
         createjs.Ticker.on("tick", gameLoop); // call gameLoop every frame 
 
